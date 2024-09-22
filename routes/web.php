@@ -1,6 +1,9 @@
 <?php
 
+use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TrainingController;
+use App\Http\Controllers\TrainerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,4 +18,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('index');
-});
+})->name('home');
+
+Route::get('/about', function () {
+    return view('Aboutus.about-us');
+})->name('about');
+
+
+Route::resource('class', TrainingController::class);
+Route::resource('service', ServiceController::class);
+Route::resource('trainers', TrainerController::class);

@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/login.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="{{asset('assets/css/login.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Login</title>
 </head>
 <body>
-  
+
 <div class="container" id="container">
 	<div class="form-container sign-up-container">
 		<form action="#">
@@ -54,15 +55,6 @@
 		</div>
 	</div>
 </div>
-
-<footer>
-	<p>
-		Created with <i class="fa fa-heart"></i> by
-		<a target="_blank" href="https://florin-pop.com">Florin Pop</a>
-		- Read how I created this and how you can join the challenge
-		<a target="_blank" href="https://www.florin-pop.com/blog/2019/03/double-slider-sign-in-up-form/">here</a>.
-	</p>
-</footer>
-<script src="js/login.js"></script>
+<script src="{{asset('assets/js/login.js')}}"></script>
 </body>
 </html>

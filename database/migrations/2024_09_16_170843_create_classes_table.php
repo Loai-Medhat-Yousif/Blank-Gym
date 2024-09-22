@@ -16,6 +16,7 @@ return new class extends Migration
           $table->decimal('cost', 8, 2);
           $table->date('date');
           $table->time('time');
+            $table->string('image')->nullable();
           $table->integer('class_size');
           $table->string('class_type');
           $table->timestamps();
