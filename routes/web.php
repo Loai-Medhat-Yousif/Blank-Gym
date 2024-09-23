@@ -24,6 +24,22 @@ Route::get('/about', function () {
     return view('Aboutus.about-us');
 })->name('about');
 
+Route::get('/login', function () {
+  return view('login');
+})->name('Login');
+
+Route::get('/dashboard', function () {
+  return view('dashboard');
+})->name('Dashboard');
+
+Route::get('/courses', function () {
+  return view('courses');
+})->name('Courses');
+
+Route::get('/plans', function () {
+  return view('plans');
+})->name('Plans');
+
 
 Route::resource('class', TrainingController::class);
 Route::resource('service', ServiceController::class);

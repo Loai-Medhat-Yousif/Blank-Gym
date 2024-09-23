@@ -80,9 +80,8 @@
                         <li><a href="{{route('about')}}">About Us</a></li>
                         <li><a href="{{route('class.index')}}">Classes</a></li>
                         <li><a href="{{route('service.index')}}">Services</a></li>
-                        <li><a href="{{route('trainers.index')}}">Our Team</a></li>
-
-                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="{{route('Dashboard')}}">Our Team</a></li>
+                        <li><a href="{{route('Login')}}">Login & Register</a></li>
                     </ul>
                 </nav>
             </div>
